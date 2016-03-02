@@ -2,23 +2,25 @@
 using namespace std;
 /*
     描述：
-        給定一個十進位整數 N，求其對應的2進位數中1的個數
+        給定一個十進位整數 N ，求其對應的2進位數中1的個數。
     輸入：
-
+        第一個整數表示有 N 組測試數據，其後 N 行是對應的測試數據，每行為一個整數。
+    輸出：
+        N 行，每行輸出對應一個輸入。
 */
 int main() {
-    int k = 0;
-    cin >> k;
-    int n1 = 0, n5 = 0, n10 = 0;
-    for (int i = 0; i<k; i++) {
-        int n;
-        cin >> n;
-        if (n == 1) n1++;
-        else if (n == 5) n5++;
-        else if (n == 10) n10++;
+    int n = 0;
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        int x = 0;
+        int ans = 0;
+        cin >> x;
+        while (x > 0) {
+            ans += x % 2;
+            x /= 2;
+        }
+        cout << ans << endl;
     }
-    cout << n1 << endl;
-    cout << n5 << endl;
-    cout << n10 << endl;
     return 0;
 }
