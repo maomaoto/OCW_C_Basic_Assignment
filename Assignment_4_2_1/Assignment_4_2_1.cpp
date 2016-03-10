@@ -30,6 +30,7 @@ int main(){
         else if (60 < patient) age[3]++;
     }
 
+
     // 轉換為百分比
     for (int i = 0; i<4; i++){
         age[i] = (double)age[i]*100.0/n;
@@ -38,7 +39,7 @@ int main(){
     // 輸出
     cout << "1-18: " << setprecision(2) << fixed << age[0] << '%' << endl;
     cout << "19-35: " << age[1] << '%' << endl;
-    cout << "36-60: " << age[1] << '%' << endl;
-    cout << "60-: " << age[1] << '%' << endl;
+    cout << "36-60: " << age[2] << '%' << endl;
+    cout << "60-: " << age[3] << '%' << endl;
     return 0;
 }
