@@ -28,8 +28,10 @@ int main(){
     }
     // Ó‹Ëã•régKİ”³ö
     for (int i = 0; i<n; i++){
-        bike = 27 + 23 + dist[i] / 3;
+        bike = 27 + 23 + dist[i] / 3.0;
         walk = dist[i] / 1.2;
+        //cout << "Bike: " << bike << endl;
+        //cout << "Walk: " << walk << endl;
         if (bike < walk) cout << "Bike" << endl;
         else if (bike > walk) cout << "Walk" << endl;
         else cout << "All" << endl;
