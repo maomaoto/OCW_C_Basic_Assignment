@@ -52,8 +52,9 @@ int main(){
                                 largeK[l] = largeK[l-1];
                             }
                             largeK[j] = num[i];
+                            break;
                         }
-                        break;
+
                     }
                 }
             }
@@ -67,8 +68,9 @@ int main(){
                                 largeK[l] = largeK[l-1];
                             }
                             largeK[j] = num[i];
+                            break;
                         }
-                        break;
+
                     }
                 }
             }
