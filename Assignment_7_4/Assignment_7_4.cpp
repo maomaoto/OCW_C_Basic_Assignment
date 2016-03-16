@@ -19,20 +19,28 @@ using namespace std;
 
 int main(){
 
-    int n = 0;
-    cin >> n;
-    if (n % 4 == 0){
-        if (n % 100 != 0){
-            cout << 'Y' << endl;
-        } else {
-            if (n % 400 == 0){
-                cout << 'Y' <<endl;
-            }else {
-                cout << 'N' << endl;
-            }
-        }
-    } else {
-        cout << 'N' << endl;
+    int a = 0;
+    int b = 0;
+    char o = '\0';
+
+    cin >> a >> b >> o;
+
+    switch(o){
+        case '+':
+            cout << a+b << endl;
+            break;
+        case '-':
+            cout << a-b << endl;
+            break;
+        case '*':
+            cout << a*b << endl;
+            break;
+        case '/':
+            if (b != 0) cout << a/b << endl;
+            else cout << "Divided by zero!" << endl;
+            break;
+        default:
+            cout << "Invalid operator!" << endl;
     }
 
     return 0;
