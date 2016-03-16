@@ -19,6 +19,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Assignment_7_5.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
